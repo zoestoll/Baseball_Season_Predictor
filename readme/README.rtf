@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 ZOE STOLL	cslogin: zstoll\
+README - DATA SCIENCE MLB PROJECT\
+------------------------------------------------------------------------------------\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+To run the program, type:\
+\
+
+\b python reducer.py Salaries.dat
+\b0 \
+\
+-----------------------------------------------------------------------------------\
+
+\fs28 To run some of the mini-programs I wrote:\
+
+\fs24 \
+
+\b python standings.py -i inputf Teams.csv
+\b0  (this one will show create a file with the final rankings of each team per year).\
+\
+
+\b python batting.py Batting.csv\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 python salaries.py  Salaries.csv\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+
+\b0 ------------------------------------------------------------------------------------\
+\
+
+\b Bugs, issues, and other stuff:\
+\
+
+\b0 - I initially planned on attempting to predict the 2015 season standings by using prior season standings as a model and building a classifier. However, I found this near impossible to do seeing as there is so much randomness and unpredictability in baseball. I plan to continue working on this project and figure out better ways to adjust the data so that I can create a better prediction engine than the current one.\
+\
+ - I was unable to account for rookies since there are no "prior season" stats for them. Minor league stats are likely recorded somewhere, but they were not in this database. This may have significantly offset my data as every player has a first year at some point, and for each time a new player came along I was unable to account for this data.\
+\
+- I only used the data from 1985 and onward because that is when salaries began to be recorded. It would have been much more challenging - probably would have to use a separate program - to use all the other data but still have a "salary" feature, a feature I considered worth the sacrifice since it's such a crucial part of baseball (i.e. everyone knows how much Yankees players make!).\
+\
+- I am including in the handin predictor.py, although this was so unsuccessful in accurately predicting results that I did not attempt to predict 2015 results with it (so the actual test model part of it is incomplete). However you can look at the code to get an idea for what I did. In order to run it you will need to run standings.py as well as batting.py or salary.py \
+}
